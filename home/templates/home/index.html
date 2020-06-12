@@ -7,6 +7,11 @@
             <div class="col"></div>
         </div>
     </div>
+    <div id="delivery-banner" class="row text-center .d-none .d-lg-block .d-xl-none">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Become an Ambassador on orders over £100!</h4>                
+            </div>            
+        </div>
 {% endblock %}
 
 {% block content %}
@@ -20,7 +25,7 @@
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                     </h4>
                     <h4>
                         <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Become an Ambassador</a>
