@@ -16,10 +16,11 @@
                 Mens
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="mens-clothing-link">
-                <a href="" class="dropdown-item">Tops</a>
-                <a href="" class="dropdown-item">Jumpers</a>
-                <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">Tracksuits</a>
+                <a href="{% url 'products' %}?category=mens_tops,mens_jumpers,mens_shorts,mens_tracksuits" class="dropdown-item">All Mens</a>
+                <a href="{% url 'products' %}?category=mens_tops" class="dropdown-item">Tops</a>
+                <a href="{% url 'products' %}?category=mens_jumpers" class="dropdown-item">Jumpers</a>
+                <a href="{% url 'products' %}?category=mens_shorts" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=mens_tracksuits" class="dropdown-item">Tracksuits</a>
             </div>
         </li>
 
@@ -28,11 +29,12 @@
                 Womens
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="womens-clothing-link">
-                <a href="" class="dropdown-item">Tops</a>
-                <a href="" class="dropdown-item">Jumpers</a>
-                <a href="" class="dropdown-item">leggings</a>
-                <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">Tracksuits</a>
+                <a href="{% url 'products' %}?category=womens_tops,womens_jumpers,womens_leggings,womens_shorts,womens_tracksuits" class="dropdown-item">All Womens</a>
+                <a href="{% url 'products' %}?category=womens_tops" class="dropdown-item">Tops</a>
+                <a href="{% url 'products' %}?category=womens_jumpers" class="dropdown-item">Jumpers</a>
+                <a href="{% url 'products' %}?category=womens_leggings" class="dropdown-item">leggings</a>
+                <a href="{% url 'products' %}?category=womens_shorts" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=womens_tracksuits" class="dropdown-item">Tracksuits</a>
             </div>
         </li>
         

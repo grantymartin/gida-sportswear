@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
@@ -96,6 +96,11 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center .d-none .d-lg-block .d-xl-none">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Become an Ambassador on orders over £100!</h4>                
+            </div>            
         </div>
     </header>
 
